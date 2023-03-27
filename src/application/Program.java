@@ -13,12 +13,19 @@ public class Program {
 
 		Department obj = new Department(1, "Books");
 		
-		Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.0, obj);
+		Seller seller1 = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.0, obj);
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
-		System.out.println(obj);
-		System.out.println(seller);
+		Seller seller2 = sellerDao.findById(3);
 		
+		System.out.println(obj);
+		System.out.println();
+		
+		System.out.println(seller1);
+		System.out.println();
+		
+		System.out.println(seller2);
+		System.out.println();
 	}
 }
