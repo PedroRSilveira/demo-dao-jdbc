@@ -75,7 +75,7 @@ public class Program {
 			System.out.println(d);
 		}
 		
-		System.out.println("\nTEST 4: Seller insert\n");
+		System.out.println("\nTEST 4: Department insert\n");
 		Department newDepartment = new Department(null, "Music");
 		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New department: " + newDepartment.getName() + ", id: " + newDepartment.getId());
