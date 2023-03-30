@@ -75,10 +75,16 @@ public class Program {
 			System.out.println(d);
 		}
 		
-		System.out.println("\nTEST 4: Department insert\n");
+		System.out.println("\nTEST 3: Department insert\n");
 		Department newDepartment = new Department(null, "Music");
 		departmentDao.insert(newDepartment);
-		System.out.println("Inserted! New department: " + newDepartment.getName() + ", id: " + newDepartment.getId());
+		System.out.println("Inserted! New department: " + newDepartment.getName() + ", id: " + newDepartment.getId());	
+		
+		System.out.println("\nTEST 4: Department update\n");
+		Department dep2 = departmentDao.findById(6);
+		dep2.setName("Food");
+		departmentDao.update(dep2);
+		System.out.println("Update completed");
 		
 		sc.close();
 	}
