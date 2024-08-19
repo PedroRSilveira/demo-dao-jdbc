@@ -10,7 +10,7 @@ O software consiste em um sistema para acessar, buscar e editar informações de
 
 Foi feita uma injeção de dependência usando o padrão de projeto Factory:
 
-![alt text](https://media.discordapp.net/attachments/1057825601798549596/1093322522658873394/image.png)
+![alt text](DiagramaUML.png)
 
 # Tecnologias utilizadas
 
